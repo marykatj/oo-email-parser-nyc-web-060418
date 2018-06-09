@@ -5,7 +5,7 @@ attr_accessor :unformatted_emails
 @@all = []
 
 def initialize(unformatted_emails)
-  @unformatted_emails = unformatted_emails.split(/\,|\ /).join("")
+  @unformatted_emails = unformatted_emails.split(/\,|\ /).join(" ")
   @@all << @unformatted_emails
 end
 
