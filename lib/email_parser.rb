@@ -6,7 +6,7 @@ attr_accessor :unformatted_emails
 
 def initialize(unformatted_emails)
   @unformatted_emails = unformatted_emails.split(/\,|\ /)
-  @@all << self
+  @@all << @unformatted_emails
 end
 
   def parse
