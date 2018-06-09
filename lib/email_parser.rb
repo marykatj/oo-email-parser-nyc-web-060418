@@ -7,9 +7,9 @@ def initialize(unformatted_emails)
 end
 
   def parse
-    unformatted_emails.split.map {|email| email.split(" , ")}
-  end.flatten.uniq
-
+    formatted emails = unformatted_emails.split.map {|email| email.split(" , ")}
+  end
+  formatted_emails.flatten.uniq
 end
 
 # Build a class EmailParser that accepts a string of unformatted
