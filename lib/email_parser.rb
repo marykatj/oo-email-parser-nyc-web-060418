@@ -11,7 +11,7 @@ end
 
   def parse
     @@all.split(/\,|\ /)
-  end.uniq
+  end
 
 end
 
