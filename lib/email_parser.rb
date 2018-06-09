@@ -8,7 +8,7 @@ end
 
   def parse
     unformatted_emails.split.map do |email|
-      email.split(" , ")
+      email.split(", ")
   end.flatten.uniq
 end
 end
