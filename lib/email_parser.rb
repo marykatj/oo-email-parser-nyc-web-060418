@@ -10,7 +10,7 @@ def initialize(unformatted_emails)
 end
 
   def parse
-    @@all.plit(/\,|\ /).uniq
+    @@all.split(/\,|\ /).uniq
   end
 
 end
