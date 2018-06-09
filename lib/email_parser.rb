@@ -9,7 +9,7 @@ def initialize(unformatted_emails)
   @@all << self
 end
 
-  def self.parse
+  def parse
     @@all.plit(/\,|\ /).uniq
   end
 
