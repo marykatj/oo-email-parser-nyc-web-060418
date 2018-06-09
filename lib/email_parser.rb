@@ -2,16 +2,13 @@ class EmailParser
 
 attr_accessor :unformatted_emails
 
-@@all = []
-
 def initialize(unformatted_emails)
-  @unformatted_emails = unformatted_emails.split(" , ").join(" , ")
-  @@all << @unformatted_emails
+  @unformatted_emails = unformatted_emails
 end
 
   def parse
-    @@all.uniq
-  end
+    unformatted_emails.split.map {|email| email.split(" , ")}
+  end.flatten.uniq
 
 end
 
